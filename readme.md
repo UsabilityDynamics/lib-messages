@@ -5,6 +5,8 @@ Additionally, there is a growing need to keep users updated on non-critical mess
 ## Objectives
 - Allow a standard way of pushing messages to WordPress sites over XML-RPC. 
 - Allow for basic Acknowledgement, Acceptance and Rejection of messages.
+- Display Critical notifications that may be affecting service availability in the administrative toolbar.
+- Deliver non-administrative messages to website users who choose to subscribe to a particular topic of interest. 
 
 ## Basic Message Manipluation
 ```php
@@ -30,15 +32,28 @@ Single Messages are Post Types they have all the same searching and querying fun
 ```php
 $messages = get_posts(array(
  "post_type" => "_message",
- "post_status" => "publish",
-))
+ "post_status" => "publish"
+));
+
+// Query for critical messages related to a particular application - e.g. WP-Property XML-Importer.
+$messages = UsabilityDynamics\Messages\Query(array(
+  "type": "critical",
+  "app_id": "wpp.xmli"
+));
+
+// Query all messages that have not been ready AND require acknowledgement.
+$messages = UsabilityDynamics\Messages\Query(array(
+  "mustAcknowledge": true,
+  "read": false
+));
+
 ```
 
 ## AJAX Endpoints
 Admin AJAX API calls should be used for most of the backend administration.
 
 Get specific message as JSON object.
-```GET     /wp-admin.php?action=/message/23432```
+* ```GET     /wp-admin.php?action=/message/23432```
 
 Delete a message by ID.
 ```DELETE  /wp-admin.php?action=/message/23432```
