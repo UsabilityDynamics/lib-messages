@@ -29,6 +29,7 @@ $messages = get_posts(array(
 ```
 
 ## AJAX Endpoints
+Admin AJAX API calls should be used for most of the backend administration.
 
 Get specific message as JSON object.
 GET     /wp-admin.php?action=/message/23432
@@ -38,4 +39,14 @@ DELETE  /wp-admin.php?action=/message/23432
 
 Perform basic search/query.
 GET     /wp-admin.php?action=/messages?q=type:critical
+
+Mark a message as acknowledge
+GET    /wp-admin.php?action=/message/23432/acknowledge
+
+Mark a message as accepted
+GET    /wp-admin.php?action=/message/23432/accept
+
+Mark a message as rejected
+GET    /wp-admin.php?action=/message/23432/reject
+
 
