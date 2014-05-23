@@ -56,18 +56,21 @@ Get specific message as JSON object.
 * ```GET     /wp-admin.php?action=/message/23432```
 
 Delete a message by ID.
-```DELETE  /wp-admin.php?action=/message/23432```
+* ```DELETE  /wp-admin.php?action=/message/23432```
 
 Perform basic search/query.
-```GET     /wp-admin.php?action=/messages?q=type:critical```
+* ```GET     /wp-admin.php?action=/messages?q=type:critical```
 
 Mark a message as acknowledge
-```GET    /wp-admin.php?action=/message/23432/acknowledge```
+* ```GET    /wp-admin.php?action=/message/23432/acknowledge```
 
 Mark a message as accepted
-```GET    /wp-admin.php?action=/message/23432/accept```
+* ```GET    /wp-admin.php?action=/message/23432/accept```
 
 Mark a message as rejected
-```GET    /wp-admin.php?action=/message/23432/reject```
+* ```GET    /wp-admin.php?action=/message/23432/reject```
 
+## Future / Low Priority Features
+* Ability for messages to make XML-RPC callbacks (reply_to) back to the service that was needing an action once an action is made by user.
+* Allow messages to be used within plugins and themes to deliver product-related updates in a branded manner.
 
