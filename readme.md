@@ -35,9 +35,15 @@ $messages = get_posts(array(
  "post_status" => "publish"
 ));
 
-// Query for critical messages related to a particular application - e.g. WP-Property XML-Importer.
+// Query for critical messages.
 $messages = UsabilityDynamics\Messages\Query(array(
   "type": "critical",
+  "app_id": "wpp.xmli"
+));
+
+// Query for product-related log messages (WP-Property XML-Importer.)
+$messages = UsabilityDynamics\Messages\Query(array(
+  "topic": "**.log",
   "app_id": "wpp.xmli"
 ));
 
