@@ -1,4 +1,4 @@
-There is a growing need to be able to notify or engage select users in regards to certain web services. Specifically, there is often a need to notify the user while they are using their WordPress control panel - such as in the case of a third-party service requiring re-authentication from the end-user. 
+There is a growing need to be able to notify or engage select users in regards to certain web services. Specifically, there is often a need to notify the user while they are using their WordPress control panel - such as in the case of a third-party service being used by the CMS on behalf o the user requiring re-authentication.
 
 Additionally, there is a growing need to keep users updated on non-critical messages related to their ongoing web services, such as data syndication. Delivering such messages over e-mail is not nearly as ideal as in the control panel where where the user take the necssary action to resolve the issue, acknowledgement a change or reject an update of some sort.
 
