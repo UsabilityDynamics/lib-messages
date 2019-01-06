@@ -1,13 +1,13 @@
 {
-  "name": "usabilitydynamics/lib-messages",
+  "name": "udx/lib-messages",
   "type": "library",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "XML-RPC Messaging library.",
   "require": {},
   "repositories": [
     {
       "type": "composer",
-      "url": "http://repository.usabilitydynamics.com"
+      "url": "https://repository.usabilitydynamics.com"
     }
   ],
   "minimum-stability": "dev",

@@ -1,12 +1,12 @@
 {
   "name": "lib-messages",
   "description": "The best project ever.",
-  "version": "0.0.1",
-  "homepage": "http://github.com/UsabilityDynamics/lib-messages",
+  "version": "0.1.0",
+  "homepage": "http://github.com/udx/lib-messages",
   "author": {
     "name": "Usability Dynamics",
     "email": "info@UsabilityDynamics.com",
-    "url": "http://UsabilityDynamics.com"
+    "url": "https://www.usabilitydynamics.com"
   },
   "directories": {
     "lib": "./lib"
@@ -14,7 +14,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/UsabilityDynamics/lib-messages/blob/master/LICENSE-MIT"
+      "url": "http://github.com/udx/lib-messages/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
